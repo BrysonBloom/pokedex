@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
+    integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>pokedex</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand bg-danger text-light no-select">
+      <a class="navbar-brand ms-3" href="#">
+        <img src="https://www.pngkit.com/png/full/228-2289847_master-ball-pixel-art-pokeball.png" height="45" alt=""
+          loading="lazy">
+        <span class="ms-2">Pokedex</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-7" id="active-pokemon">
+          <!-- <div class="card my-4 bg-danger">
+            <div class="card-body border border-5 rounded text-center fw-bold fs-3 border-danger bg-light"
+              id="name-card">Pokemon Name
+            </div>
+            <img src="https://via.placeholder.com/500" alt="">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-6">height</div>
+                  <div class="col-6">weight</div>
+                  <div class="col-6">Types</div>
+                </div>
+                <div class="row ">
+                  <div class="col-12 d-flex justify-content-end">
+                    <button class="btn btn-danger">Catch</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-5">
+          <div class="card my-3">
+            <div class="card-header text-center">Pokemon</div>
+            <div class="card-body" type="scroll" style="max-height: 75vh; overflow-y: scroll" id="pokemon-cards">
+              <!-- <div class="border border-3">pokemon name</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p><small>Made with 💖 by CodeWorks</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+    integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>
